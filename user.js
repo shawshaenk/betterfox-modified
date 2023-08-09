@@ -253,10 +253,15 @@ user_pref("cookiebanners.service.mode.privateBrowsing", 2);
  * START: MY OVERRIDES                                                      *
 ****************************************************************************/
 // Enter your personal prefs below this line:
+
 // PREF: do not allow embedded tweets, Instagram, Reddit, and Tiktok posts
 // [NOTE] This matches the default behavior for Strict ETP
 user_pref("urlclassifier.trackingSkipURLs", "");
 user_pref("urlclassifier.features.socialtracking.skipURLs", "");
+
+// PREF: restore Firefox accounts
+user_pref("identity.fxaccounts.enabled", true);
+user_pref("dom.push.enabled", true); // Push API
 
 /****************************************************************************
  * END: BETTERFOX                                                           *
